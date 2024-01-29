@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les boucles</title>
+</head>
+<body>
+  <script>
+
+    let a = 0;
+
+    while(a < 10){
+      if(a === 7) break; // pour arreter la boucle
+      console.log('a est egale a : ' + a);
+      a++;
+    }
+
+    for (let i = 0; i < 10; i++) {
+      if(i === 5) continue; //pour sauter une lettre ou un chiffre
+        console.log("i est egale a : " + i);
+    }
+
+    // incrementation et la decrementation
+
+    let x = 0, xprime = 0, alpha = 10, alphaprime = 10;
+
+    let y = x++;
+    let beta = alpha++;
+
+    let yprime = ++xprime;
+    let betaprime = --alphaprime;
+
+    alert("y : " + y +
+    "\nyprime : " + yprime +
+    "\nbeta : " + alpha +
+    "\nalphaprime : " + alphaprime + 
+    "\nx : " + x +
+    "\nxprime : " + xprime +
+    "\nbetaprime : " + betaprime);
+
+    let b = 1;
+
+    do{
+      console.log('b vaut : ' + b);
+      b++;
+    }
+    while(b < 10);
+
+    
+  const names = ['mactar', 'julia', 'marieme', 'fatima'];
+
+  for (name of names){
+    console.log(name);
+    if (name === 'marieme'){
+      console.log("marieme is in the list");
+      break;  // le point d'arret
+    }
+  }
+
+  for(let i = 1; i<11; i++){
+     if(i % 2 == 0) continue;
+    alert(i);
+  }
+  
+ 
+
+
+
+ 
+  
+  </script>
+</body>
+</html>

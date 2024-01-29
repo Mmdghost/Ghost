@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> L'objet Date</title>
+  </head>
+  <body>
+    <script>
+      let d = new Date();
+      let d0 = new Date(2010,4,7,15,51,27);
+
+      //date format iso anglo-saxon
+      const diso = new Date("2019-11-23");
+      const diso1 = new Date("2019-11-23T12:13:15");
+
+      alert("la format iso : " + diso);
+      alert(`la format iso complete : ${diso1}`);
+
+      const even = new Date("january 25, 2021 09:00:00");
+
+      alert(d);
+      console.log(d0);
+      alert(even);
+    </script>
+  </body>
+</html>

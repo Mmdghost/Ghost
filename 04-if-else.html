@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IF ELSE</title>
+</head>
+<body>
+  <h1>les conditions en javascript</h1>
+
+   <script>
+      let hour = 12;
+ 
+     if (typeof(hour) == "number" == true){ 
+      if (hour < 12 == true) {
+        console.log("C'est le matin");
+      }
+      else if(hour == 12 == true){
+        alert("il est midi");
+      }
+      else if (hour <= 18 == true){
+        console.log("C'est l'apres midi");
+      }
+      else{
+        console.log("C'est le soir");
+      }
+    }
+    else {
+      alert("Mauvais type de valeur");
+    }
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array et les Tableaux</title>
+</head>
+<body>
+  
+
+  <script>
+    // Arrays en JavaScript
+
+    let prenom = ['Mactar', 'Ahmed', 'Bintou', 'Ndeye'];
+    // raccourcis pour ajouter des prenoms sur le tableau
+
+    prenom[prenom.length] = 'Yacine';
+    prenom.unshift("Diop"); /*Pour ajouter un element au debut de array*/
+    prenom.push("Ghost");  /*Pour ajouter un autre element dans  l'array apres le dernier*/
+    prenom.shift();  /* pour cacher le premier element */ 
+    prenom.pop();    /*Pour cacher le dernier element*/
+    
+
+    
+    alert(prenom[0]);
+    alert('Notre tableau contient ' + prenom.length + ' elements'); 
+
+    // Création d'un tableau
+      let fruits = ["pomme", "banane", "orange"];
+
+      // Affichage du tableau
+      console.log(fruits);
+
+      // Accès à un élément du tableau
+      console.log(fruits[0]); // Accès à la première position du tableau
+
+      // Modification d'un élément du tableau
+      fruits[1] = "kiwi";
+      console.log(fruits);
+
+      // Ajout d'un élément au tableau
+      fruits.push("mangue");
+      console.log(fruits);
+
+      // Suppression d'un élément du tableau
+      fruits.splice(2, 1); // Supprime 1 élément à partir de la position 2
+      alert("splice : " + fruits);
+
+      // Parcours d'un tableau avec une boucle for
+      for (let i = 0; i < fruits.length; i++) {
+        alert(fruits[i]);
+      }
+
+      // Parcours d'un tableau avec la méthode forEach
+      fruits.forEach(function (fruit) {
+        alert(fruit);
+      });
+  </script>
+</body>
+</html>

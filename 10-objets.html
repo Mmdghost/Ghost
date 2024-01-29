@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>les Objets en javascript</title>
+</head>
+<body>
+
+  <h1>Les objects en javascript</h1>
+   <script>
+    let primitive = "i'm primitive"
+
+    let moi = {
+      prenom : 'mactar',
+      nom : 'diop',
+      age :   22,
+
+      identity : function(){
+        return 'prenom : ' + this.prenom +
+                '\nNom : ' + this.nom +
+                '\nAge : ' + this.age;
+      }
+    }
+
+    alert(moi.identity());
+    console.log(moi['prenom']);
+
+    let toi = {};
+    toi.nom = "mactar"
+    toi.age = 22;
+
+    console.log(toi['age']);
+
+    let vous = new String();
+    vous.name = "ghost";
+
+    console.log(vous.name);
+
+    let primitive1 = "ghost";
+    let longueur_prim = primitive1.length;
+    let maj_prim = primitive1.toUpperCase();
+
+    let chaine = new String("je suis un objet");
+    let maj_chaine = chaine.toUpperCase();
+
+    alert('longueur de primitive : ' + longueur_prim +
+          '\nPrimitive en majuscule : ' + maj_prim +
+          '\nChaine en majuscule : ' + maj_chaine);
+
+   // OBJET CONSTRUCTEUR 
+   function identite(p, n, a) {
+     this.prenom = p;
+     this.nom = n;
+     this.age = a;
+   }
+
+   let mactar = new identite("mactar", "diop", 22);
+   let yacine = new identite("yacine", "mbaye", 42);
+
+   alert('age de mactar : ' + mactar.age +
+         '\nage de maman : ' + yacine.age);
+  
+  
+
+  //Object construtor  
+  function roadMap(h,c,j){
+    this.html = h;
+    this.css = c;
+    this.javascript = j;
+  }
+  let mactare = new roadMap('makhou', 'Diop', 25);
+
+  alert('identity de letudiant est :' + mactare.javascript);
+  </script>
+</body>
+</html> 

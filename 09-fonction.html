@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les fonctions</title>
+</head>
+<body>
+   <h1>Les fonctions</h1>
+
+   <script>
+      function multiplication(x,y){
+         console.log(x*y);
+      }
+
+      multiplication(10,4);
+      multiplication(2,10);
+      multiplication((3+5),(1+1));
+
+      function ghost(x,y){
+        return x + y;
+      }
+    
+
+      let somme = ghost(3,6);
+
+      somme += 2;
+
+      console.log(somme);
+
+      const marge = (a, b) => {
+         alert(a * b);
+      }
+
+      marge(10, 2);
+
+      // les fonctions auto invoquee
+      (function(a){
+         a = prompt("Entrer un nombre");
+         alert("le carre de: " + a + " = " + a*a)
+      })();
+
+      (function(a){
+         a = prompt('Quel est votre Nom');
+         b = confirm(`${a} est il votre Nom`);
+         alert('Bienvenue ' + a)
+      })();
+   </script>
+</body>
+</html>
